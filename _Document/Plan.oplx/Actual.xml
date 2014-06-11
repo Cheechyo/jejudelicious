@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="e-wPCNQTCVe">
+  <start-date>2014-06-01T23:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="72000" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="72000" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="72000" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="72000" end-time="75600"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday"/>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="46800" end-time="54000"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>고원지</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t15"/>
+    <child-task idref="t4"/>
+  </task>
+  <task id="t4">
+    <title>프로젝트 환경 구성</title>
+    <type>group</type>
+    <start-constraint-date>2014-06-03T11:00:00.000Z</start-constraint-date>
+    <child-task idref="t10"/>
+    <child-task idref="t13"/>
+    <child-task idref="t11"/>
+  </task>
+  <task id="t10">
+    <title>템플릿 소스 찾기</title>
+    <leveled-start>2014-06-03T11:00:00.000Z</leveled-start>
+    <effort>7200</effort>
+    <start-constraint-date>2014-06-02T11:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t11">
+    <title>테스트앱생성 + 템플릿</title>
+    <leveled-start>2014-06-12T12:00:00.000Z</leveled-start>
+    <effort>7200</effort>
+    <start-constraint-date>2014-06-11T11:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t13">
+    <title>Git구성</title>
+    <leveled-start>2014-06-11T11:00:00.000Z</leveled-start>
+    <effort>7200</effort>
+    <effort-done>3600</effort-done>
+    <start-constraint-date>2014-06-11T11:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t15">
+    <title>페이스북 관련</title>
+    <type>group</type>
+    <start-constraint-date>2014-06-02T11:00:00.000Z</start-constraint-date>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+  </task>
+  <task id="t17">
+    <title>데이터 가져오기 및 분석</title>
+    <leveled-start>2014-06-02T11:00:00.000Z</leveled-start>
+    <effort>3600</effort>
+    <effort-done>1800</effort-done>
+    <start-constraint-date>2014-06-02T11:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t18">
+    <title>파싱</title>
+    <leveled-start>2014-06-02T11:00:00.000Z</leveled-start>
+    <effort>1800</effort>
+    <effort-done>1800</effort-done>
+    <start-constraint-date>2014-06-02T11:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

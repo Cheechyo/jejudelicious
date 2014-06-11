@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.0</version>
+  <task-change-set user="치쵸" date="2014-06-02T04:25:35.642Z" timestamp="2014-06-02T04:25:35.642Z">
+    <change idref="t1" attribute="startConstraintDate" type="date" to="2014-06-01T23:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="치쵸" date="2014-06-02T04:59:32.347Z" timestamp="2014-06-02T04:59:32.347Z">
+    <change idref="t1" from="t-1" from-position="0" resolved="yes">
+      <change idref="t1" attribute="startConstraintDate" type="date" to="2014-06-01T23:00:00.000Z"/>
+      <change idref="t1" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t4" to="t-1" to-position="0" resolved="yes">
+      <change idref="t4" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t4" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t4" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t4" attribute="title" type="string" to="프로젝트 환경 구성"/>
+    </change>
+    <change idref="t10" to="t4" to-position="0" resolved="yes">
+      <change idref="t10" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t10" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t10" attribute="resourceLeveledDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t10" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t10" attribute="title" type="string" to="템플릿 소스 찾기"/>
+    </change>
+    <change idref="t13" to="t4" to-position="1" resolved="yes">
+      <change idref="t13" attribute="effort" type="real" from="28800" to="18000"/>
+      <change idref="t13" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t13" attribute="resourceLeveledDate" type="date" to="2014-06-03T12:00:00.000Z"/>
+      <change idref="t13" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t13" attribute="title" type="string" to="Git구성"/>
+    </change>
+    <change idref="t11" to="t4" to-position="2" resolved="yes">
+      <change idref="t11" attribute="effort" type="real" from="28800" to="7200"/>
+      <change idref="t11" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t11" attribute="resourceLeveledDate" type="date" to="2014-06-09T12:00:00.000Z"/>
+      <change idref="t11" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t11" attribute="title" type="string" to="테스트앱생성 + 템플릿"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="치쵸" date="2014-06-02T04:59:43.923Z" timestamp="2014-06-02T04:59:43.923Z">
+    <change idref="t11" attribute="resourceLeveledDate" type="date" from="2014-06-09T12:00:00.000Z" to="2014-06-05T12:00:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="effort" type="real" from="18000" to="7200" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="치쵸" date="2014-06-02T09:09:59.863Z" timestamp="2014-06-02T09:09:59.863Z">
+    <change idref="t15" to="t-1" to-position="0" resolved="yes">
+      <change idref="t15" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t15" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t15" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t15" attribute="title" type="string" to="페이스북 관련"/>
+    </change>
+    <change idref="t10" attribute="resourceLeveledDate" type="date" from="2014-06-02T11:00:00.000Z" to="2014-06-03T11:30:00.000Z" resolved="yes"/>
+    <change idref="t11" attribute="resourceLeveledDate" type="date" from="2014-06-05T12:00:00.000Z" to="2014-06-07T05:30:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="resourceLeveledDate" type="date" from="2014-06-03T12:00:00.000Z" to="2014-06-05T11:30:00.000Z" resolved="yes"/>
+    <change idref="t17" to="t15" to-position="0" resolved="yes">
+      <change idref="t17" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t17" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t17" attribute="resourceLeveledDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t17" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t17" attribute="title" type="string" to="데이터 가져오기 및 분석"/>
+    </change>
+    <change idref="t18" to="t15" to-position="1" resolved="yes">
+      <change idref="t18" attribute="effort" type="real" from="28800" to="1800"/>
+      <change idref="t18" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t18" attribute="resourceLeveledDate" type="date" to="2014-06-02T12:00:00.000Z"/>
+      <change idref="t18" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t18" attribute="title" type="string" to="파싱"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="치쵸" date="2014-06-02T12:59:57.409Z" timestamp="2014-06-02T12:59:57.409Z">
+    <change idref="t20" to="t4" to-position="1" resolved="yes">
+      <change idref="t20" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t20" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t20" attribute="resourceLeveledDate" type="date" to="2014-06-05T11:30:00.000Z"/>
+      <change idref="t20" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t20" attribute="title" type="string" to="안드로이드 스튜디오 공부"/>
+    </change>
+    <change idref="t11" attribute="resourceLeveledDate" type="date" from="2014-06-07T05:30:00.000Z" to="2014-06-12T11:30:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="resourceLeveledDate" type="date" from="2014-06-05T11:30:00.000Z" to="2014-06-10T11:30:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="치쵸" date="2014-06-11T00:55:06.521Z" timestamp="2014-06-11T00:55:06.521Z">
+    <change idref="t4" attribute="startConstraintDate" type="date" from="2014-06-02T11:00:00.000Z" to="2014-06-03T11:00:00.000Z" resolved="yes"/>
+    <change idref="t20" from="t4" from-position="1" resolved="yes">
+      <change idref="t20" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t20" attribute="internalAssignments" type="string" from="" to="1"/>
+      <change idref="t20" attribute="resourceLeveledDate" type="date" to="2014-06-05T11:30:00.000Z"/>
+      <change idref="t20" attribute="startConstraintDate" type="date" to="2014-06-02T11:00:00.000Z"/>
+      <change idref="t20" attribute="title" type="string" to="안드로이드 스튜디오 공부"/>
+    </change>
+    <change idref="t10" attribute="resourceLeveledDate" type="date" from="2014-06-03T11:30:00.000Z" to="2014-06-03T11:00:00.000Z" resolved="yes"/>
+    <change idref="t11" attribute="startConstraintDate" type="date" from="2014-06-02T11:00:00.000Z" to="2014-06-11T11:00:00.000Z" resolved="yes"/>
+    <change idref="t11" attribute="resourceLeveledDate" type="date" from="2014-06-12T11:30:00.000Z" to="2014-06-12T12:00:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="startConstraintDate" type="date" from="2014-06-02T11:00:00.000Z" to="2014-06-11T11:00:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="resourceLeveledDate" type="date" from="2014-06-10T11:30:00.000Z" to="2014-06-11T11:00:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="internalEffortDone" type="real" from="0" to="1800" resolved="yes"/>
+    <change idref="t18" attribute="resourceLeveledDate" type="date" from="2014-06-02T12:00:00.000Z" to="2014-06-02T11:00:00.000Z" resolved="yes"/>
+    <change idref="t18" attribute="internalEffortDone" type="real" from="0" to="1800" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="치쵸" date="2014-06-11T00:55:39.672Z" timestamp="2014-06-11T00:55:39.672Z">
+    <change idref="t13" attribute="internalEffortDone" type="real" from="0" to="3600" resolved="yes"/>
+  </task-change-set>
+  <resource-change-set user="치쵸" date="2014-06-02T04:25:35.642Z" timestamp="2014-06-02T04:25:35.642Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from="-;-;-;-;-;-;-" to=";28800,43200,46800,61200;28800,43200,46800,61200;28800,43200,46800,61200;28800,43200,46800,61200;28800,43200,46800,61200;" resolved="yes"/>
+    <change idref="r1" attribute="name" type="string" from="Resource 1" to="고원지" resolved="yes"/>
+  </resource-change-set>
+  <resource-change-set user="치쵸" date="2014-06-02T04:59:32.347Z" timestamp="2014-06-02T04:59:32.347Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from=";28800,43200,46800,61200;28800,43200,46800,61200;28800,43200,46800,61200;28800,43200,46800,61200;28800,43200,46800,61200;" to=";72000,75600;72000,75600;72000,75600;72000,75600;;46800,54000" resolved="yes"/>
+  </resource-change-set>
+  <metadata-change-set user="치쵸" date="2014-06-02T04:24:42.510Z" timestamp="2014-06-02T04:24:42.510Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2014-06-01T23:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="치쵸" date="2014-06-02T04:24:42.511Z" timestamp="2014-06-02T04:24:42.511Z">
+    <change idref="m1" attribute="baselineInfo" type="dict" from="{
+    info =     (
+    );
+}" to="{
+    info =     (
+                {
+            name = &quot;Baseline 2014. 6. 2.&quot;;
+            uuid = pHpzZ2J2YVm;
+        }
+    );
+}" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="치쵸" date="2014-06-02T04:26:56.920Z" timestamp="2014-06-02T04:26:56.920Z">
+    <change idref="m1" attribute="projectTitle" type="string" to="JeJu Dlicious" resolved="yes"/>
+  </metadata-change-set>
+</changelog>
